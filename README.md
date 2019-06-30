@@ -12,7 +12,7 @@ A imagem de referência para a TODO LIST encontra-se mais abaixo.
 
 # Entrega
 
-Você pode entregar atravÃ©s de um anexo por email ou link para um repositório. Aceitamos o desafio até 7 dias depois do envio.
+Você pode entregar através de um anexo por email ou link para um repositório. Aceitamos o desafio até 7 dias depois do envio.
 
 Eventuais dúvidas, podem ser tiradas também por email.
 
