@@ -43,7 +43,6 @@ class App extends React.Component {
       }
       return item
     })
-    console.log(list)
     this.updateItems(list)
   }
 
