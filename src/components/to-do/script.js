@@ -36,14 +36,15 @@ class App extends React.Component {
     return data
   }
 
-  itemDone(item) {
-    this.state.toDoList.map(i => {
-      if(i.id === item.id) {
+  itemDone({ id }) {
+    const list = this.state.toDoList.map(item => {
+      if(item.id === id) {
         item.done = !item.done
       }
       return item
     })
-    this.updateItems()
+    console.log(list)
+    this.updateItems(list)
   }
 
   nextId() {
@@ -51,15 +52,15 @@ class App extends React.Component {
   }
 
   storeItems( title ) {
-    this.state.toDoList.push({
+    const list = this.state.toDoList.concat({
       "id": this.nextId(),
       "title": title,
       "done": false
     })
-    this.updateItems()
+    this.updateItems(list)
   }
 
-  removeItem( id ) {
+  removeItem({ id }) {
     const list = this.state.toDoList.filter(item => {
       return item.id !== id
     })
@@ -68,11 +69,11 @@ class App extends React.Component {
 
   updateItems(list) {
     this.setState({
-      toDoList: list || this.state.toDoList
+      toDoList: list
     })
 
     if(window.localStorage) {
-      localStorage.setItem(this.storageName, JSON.stringify(this.state.toDoList))
+      localStorage.setItem(this.storageName, JSON.stringify(list))
     }
   }
 
