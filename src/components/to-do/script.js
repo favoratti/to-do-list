@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './styles.css'
 import Form from '../form/script'
 import List from '../list/script'
 
-class App extends React.Component {
+class App extends Component {
   storageName = 'bd_toDoList'
 
   constructor() {
@@ -13,6 +13,11 @@ class App extends React.Component {
       toDoList: this.getItems()
     }
   }
+
+  componentDidMount() {
+    this.input.focus()
+  }
+
 
   getItems(evt) {
     let data = []
@@ -57,6 +62,7 @@ class App extends React.Component {
       "done": false
     })
     this.updateItems(list)
+    this.input.focus()
   }
 
   removeItem({ id }) {
@@ -80,7 +86,7 @@ class App extends React.Component {
     return (
       <div className="toDo">
         <h1>ToDo List</h1>
-        <Form storeItems={this.storeItems.bind(this)} />
+        <Form storeItems={this.storeItems.bind(this)} inputRef={ref => this.input = ref} />
         <List toDoList={this.state.toDoList} itemDone={this.itemDone.bind(this)} removeItem={this.removeItem.bind(this)} />
       </div>
     )

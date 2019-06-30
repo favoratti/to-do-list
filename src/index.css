@@ -21,6 +21,7 @@ body {
 #root {
   margin: 40px auto;
   width: 100%;
-  max-width: 380px;
-  min-width: 320px;
+  max-width: 390px;
+  min-width: 310px;
+  padding: 0 5px;
 }
