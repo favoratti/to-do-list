@@ -1,0 +1,17 @@
+.toDo {
+  background-color: #fff;
+  border: solid 1px #e2e2e2;
+  padding: 10px 0 20px;
+  box-shadow: 0 1px 6px #ccc;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.toDo h1 {
+  font-size: 20px;
+  margin: 8px;
+  letter-spacing: -0.6px;
+  color: #565969;
+  text-align: center;
+  text-transform: uppercase;
+}

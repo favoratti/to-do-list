@@ -1,6 +1,18 @@
 {
   "name": "to-do-list",
   "version": "0.1.0",
+  "description": "A TO DO LIST app build with React",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/favoratti/to-do-list.git"
+  },
+  "keywords": [],
+  "author": "Marcelo Favoratti de Mendonça",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/favoratti/to-do-list/issues"
+  },
+  "homepage": "https://github.com/favoratti/to-do-list",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",

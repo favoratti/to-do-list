@@ -1,0 +1,53 @@
+.toDoList ul {
+  overflow: hidden;
+}
+.toDoList li {
+  list-style: none;
+  border-radius: 5px;
+  border-top: solid 1px #ddd;
+  border-left: solid 1px #ddd;
+  border-right: solid 1px #ddd;
+  min-height: 49px;
+  padding-left: 15px;
+  padding-right: 6px;
+  padding-bottom: 3px;
+  margin-bottom: -5px;
+
+  display: flex;
+  align-items: center;
+}
+.toDoList li:last-child {
+  border-bottom: solid 1px #ddd;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.toDoList label {
+  letter-spacing: 0.3px;
+  color: #999;
+  width: 80%;
+  word-break: break-word;
+  padding: 5px 0;
+}
+
+.toDoList .done * {
+  opacity: .55;
+}
+
+.toDoList input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.toDoList button {
+  background-color: #fff;
+  border: 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: #999;
+  outline: none;
+  width: 30px;
+  margin-left: auto;
+}
